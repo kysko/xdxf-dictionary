@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Dictionary</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="settings_add_dict">Add Dictionary</string>
+    <string name="settings_remove_dict">Remove Dictionary</string>
+    <string name="settings_dictionary">List Dictionary</string>
+    <string name="title_activity_add_dictionary">AddDictionaryActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_dict_browse">Browse</string>
+    <string name="settings_select_dict">Select</string>
+    <string name="dict_history">History</string>
+    <string name="title_activity_book_list">BookList</string>
+    <string name="database_export">Export Database</string>
+    <string name="database_import">Import Database</string>
+    <string name="history_clear">Clear History</string>
+    <string name="dictionary">Dictionary</string>
+    <string name="history">History</string>
+    <string name="book_list">Book List</string>
+    <string name="search">Search</string>
+    <string name="delete">Remove Dictionary</string>
+    <string name="delete_unchecked_items">Delete Checked Dictionaries</string>
+    <string name="delete_checked_items">Delete Checked Dictionaries</string>
+</resources>

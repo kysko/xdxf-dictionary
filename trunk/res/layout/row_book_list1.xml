@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.xdxf.dictionary.CheckableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="New Text"
+            android:id="@+id/bookmodel_name"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <com.xdxf.dictionary.utils.InertCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/check"
+            android:layout_alignRight="@+id/gridLayout"
+            android:layout_alignBottom="@+id/bookmodel_name"
+            android:button="@drawable/checkbox"
+            />
+   <!-- <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignLeft="@+id/bookmodel_name"
+            android:layout_below="@+id/bookmodel_name"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:id="@+id/gridLayout">
+
+        <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:id="@+id/imageView"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_rowSpan="2"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New EditText"
+                android:id="@+id/bookmodel_fromTo"
+                android:layout_row="0"
+                android:layout_column="1"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/bookmodel_desc"
+                android:layout_row="1"
+                android:layout_column="1"/>
+    </GridLayout>-->
+
+
+
+</com.xdxf.dictionary.CheckableRelativeLayout>

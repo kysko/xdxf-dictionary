@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="10dp"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp">
+    <!--TODO if the name of the dictionary is big show ellipses-->
+    <TextView
+            android:id="@+id/word_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:textSize="18dp"
+            android:focusable="false"
+            android:text="Oxford Dictionary"/>
+
+    <TextView
+            android:id="@+id/timestamp_history"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/word_history"
+            android:textSize="13dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:text="[ENG-ENG]"
+            android:textStyle="italic"
+            android:focusable="false"
+            android:typeface="monospace"/>
+
+    <CheckBox
+            android:id="@+id/checkBox_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:focusable="false"
+            android:button="@drawable/favourite"/>
+
+
+</RelativeLayout>

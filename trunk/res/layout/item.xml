@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xdxf.dictionary.CheckableRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+    <!--TODO if the name of the dictionary is big show ellipses-->
+    <TextView
+            android:id="@+id/itemId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:textSize="18dp"
+            android:focusable="false"
+            android:text="Oxford Dictionary"/>
+
+    <TextView
+            android:id="@+id/itemCaption"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/itemId"
+            android:textSize="13dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="5dp"
+            android:text="[ENG-ENG]"
+            android:focusable="false"/>
+
+    <com.xdxf.dictionary.utils.InertCheckBox
+            android:id="@+id/itemCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:focusable="false"          />
+
+
+</com.xdxf.dictionary.CheckableRelativeLayout>
