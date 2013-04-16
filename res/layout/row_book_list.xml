@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xdxf.dictionary.CheckableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bookmodel_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <CheckedTextView
+        android:id="@+id/bookmodel_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginLeft="5dp"
+        android:checked="false"
+        android:clickable="false"/>
+
+
+
+    <TextView
+        android:id="@+id/bookmodel_fromTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bookmodel_name"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/bookmodel_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bookmodel_fromTo"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginLeft="5dp"/>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+         />
+
+</com.xdxf.dictionary.CheckableRelativeLayout>

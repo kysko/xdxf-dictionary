@@ -1,0 +1,5 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/action_add_dict" android:title="@string/settings_add_dict" android:showAsAction="always" android:icon="@drawable/book_add" ></item>
+    <item android:id="@+id/action_database_export" android:title="@string/database_export" android:showAsAction="ifRoom" android:icon="@drawable/book_right" ></item>
+    <item android:id="@+id/action_database_import" android:title="@string/database_import" android:showAsAction="ifRoom" android:icon="@drawable/book_left" ></item>
+</menu>
