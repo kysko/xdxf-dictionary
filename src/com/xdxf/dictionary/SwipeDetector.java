@@ -5,6 +5,9 @@ import android.view.MotionEvent;
 import android.view.View;
 
 
+/**
+ * Found this on stackoverflow.com.. lost the actual link
+ */
 public class SwipeDetector implements View.OnTouchListener {
     private static final String logTag = "SwipeDetector";
     private static final int MIN_DISTANCE = 100;

@@ -17,11 +17,7 @@ import java.util.Date;
 import java.util.Random;
 
 /**
- * Created with IntelliJ IDEA.
- * User: comspots
- * Date: 3/31/13
- * Time: 11:31 AM
- * To change this template use File | Settings | File Templates.
+ * Utility classes
  */
 public class Utils {
 
@@ -29,6 +25,12 @@ public class Utils {
     public static SimpleDateFormat DATEFORMAT_STRING = new SimpleDateFormat("EEE, d MMM yyyy HH:mm:ss");
     public static SimpleDateFormat DATEFORMAT_ISO8601FORMAT = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
+    /**
+     * Convert given date format to ISODateFormat
+     * @param from  Dateformat for the date
+     * @param date  formatted date
+     * @return
+     */
     public static String toISODateFormat(SimpleDateFormat from, String date) {
         return convertDateFormat(from, DATEFORMAT_ISO8601FORMAT, date);
     }
@@ -46,6 +48,7 @@ public class Utils {
         }
         return date;
     }
+
     private static long[] toPrimitives(Long[] longs) {
         long[] primitives = new long[longs.length];
         for (int i = 0; i < longs.length; i++)
@@ -53,6 +56,12 @@ public class Utils {
 
         return primitives;
     }
+
+    /**
+     * convert primitive longs to Longs
+     * @param longs
+     * @return
+     */
     public static Long[] toObjects(long... longs) {
 
         Long[] objects = new Long[longs.length];
@@ -62,6 +71,13 @@ public class Utils {
         return objects;
     }
 
+    /**
+     * checks to see if an array of longs contains
+     * give value
+     * @param longs
+     * @param value
+     * @return
+     */
     public static boolean contains(long[] longs, long value) {
         boolean b = false;
         for (long l : longs) {
@@ -73,12 +89,23 @@ public class Utils {
         return b;
     }
 
+    /**
+     * hides the soft keyboard
+     * @param activity current activity
+     * @param token a unique token identifying the window this view is attached to
+     */
     public static void hideSoftKeyboard(Activity activity, IBinder token) {
         final InputMethodManager imm = (InputMethodManager) activity.getSystemService(
                 Context.INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(token, 0);
     }
 
+    /**
+     * Convenience method to get the item position based on adapter id
+     * @param adapter
+     * @param id
+     * @return  the position of item for given id
+     */
     public static int getItemPositionByAdapterId(ListAdapter adapter, final long id) {
         int position = -1;
         for (int i = 0; i < adapter.getCount(); i++) {
@@ -91,6 +118,12 @@ public class Utils {
         return position;
     }
 
+    /**
+     * Removes given value from the long array
+     * @param longs
+     * @param value
+     * @return
+     */
     public static long[] remove(long[] longs, long value) {
         if (contains(longs, value)) {
             long[] _longs = new long[longs.length - 1];
@@ -107,11 +140,21 @@ public class Utils {
     }
 
     public static class Color {
+        /**
+         * Generate a random shade of blue
+         * @return
+         */
         public static int generateRandomBlueShade() {
             return generateRandomColor(0x0000ff);//light blue #87CEFA
         }
 
-        // http://stackoverflow.com/questions/43044/algorithm-to-randomly-generate-an-aesthetically-pleasing-color-palette
+        /**
+         * Generate random colors with given 'mix'
+         * creates neutral pastels by increasing the lightness while keeping the hue of the original color.
+         * http://stackoverflow.com/questions/43044/algorithm-to-randomly-generate-an-aesthetically-pleasing-color-palette
+         * @param mix the constant pastel
+         * @return
+         */
         public static int generateRandomColor(int mix) {
             Random random = new Random();
             int red = random.nextInt(256);
@@ -127,6 +170,11 @@ public class Utils {
             return color;
         }
 
+        /**
+         * COnvert the color code to its hex representation
+         * @param color
+         * @return
+         */
         public static String toHexColor(int color) {
             return String.format("#%06X", 0xFFFFFF & color);
         }
@@ -135,9 +183,9 @@ public class Utils {
     public static class File {
 
         /**
+         * Checks if the storage is writable
          * http://stackoverflow.com/a/12949705/722965
-         *
-         * @return
+         * @return    true if writable, false otherwise
          */
         public static boolean isStorageWritable() {
             String state = Environment.getExternalStorageState();
@@ -190,6 +238,12 @@ public class Utils {
     }
 
     public static class Service {
+        /**
+         * Checks to see if Service is running
+         * @param activity
+         * @param serviceName Name of the service
+         * @return true if service is running,false otherwise
+         */
         public static boolean isServiceRunning(Activity activity, String serviceName) {
             ActivityManager manager = (ActivityManager) activity.getSystemService(Context.ACTIVITY_SERVICE);
             for (ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
@@ -222,7 +276,7 @@ public class Utils {
         static boolean isHighSurrogate(char ch) {
             return ('?' <= ch && '?' >= ch);
         }
-
+       /*
         public static int indexOfAny(String str, char[] searchChars) {
 
             int csLen = str.length();
@@ -258,7 +312,7 @@ public class Utils {
 
             return s;
         }
-
+          */
         public static String Unescape(String s) {
             if (s.startsWith(QUOTE) && s.endsWith(QUOTE)) {
                 s = s.substring(1, s.length() - 2);
