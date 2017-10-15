@@ -13,14 +13,14 @@ I **dont** own an Android phone, and i developed this using the simulator and ha
 **Screenshots**
 <table>
 <tr>
-<td><img src='https://lh5.googleusercontent.com/-EPAiW0JVsUY/UW3c9udNhrI/AAAAAAAAAP8/4e3PWKUSfX0/s800/1s.png' /></td>
-<td><img src='https://lh4.googleusercontent.com/-XOYN9apZR68/UW3c9z-XWdI/AAAAAAAAAPs/oWOLEbt-oOo/s800/2s.png' /></td>
-<td><img src='https://lh3.googleusercontent.com/-JTS8XZisQIw/UW3c97NmKAI/AAAAAAAAAQA/qjD7Bv7TknI/s800/3s.png' /></td>
+<td><img src='1s.png' /></td>
+<td><img src='2s.png' /></td>
+<td><img src='3s.png' /></td>
 </tr>
 <tr>
-<td><img src='https://lh4.googleusercontent.com/-LwyO6bppejA/UW3c-5Aj2FI/AAAAAAAAAQE/QUMcFIL5G_k/s800/4s.png' /></td>
-<td><img src='https://lh4.googleusercontent.com/-GPZo9miXvCc/UW3c_d05wfI/AAAAAAAAAQM/LDw5xHIS4qg/s800/6s.png' /></td>
-<td><img src='https://lh5.googleusercontent.com/-X_u6-EZGIS0/UW3c_NpLkRI/AAAAAAAAAQI/xVXm7eZx9ns/s800/5s.png' /></td>
+<td><img src='4s.png' /></td>
+<td><img src='6s.png' /></td>
+<td><img src='5s.png' /></td>
 </tr>
 </table>
 
